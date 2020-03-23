@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-  background: url(../src/images/typewriter-801921_1920.jpg);
+  /* background-position: center; */
+  background-color: #cccccc;
+  /* background-image: url(../src/images/a6f8dc878d82cec76f87e291537957ca.jpg); */
 }
