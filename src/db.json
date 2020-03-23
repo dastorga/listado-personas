@@ -1,9 +1,12 @@
 {
   "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode", "image": "https://github.com/dastorga/listado-personas/blob/master/src/images/beach-84533_1920.jpg"}
+    { "id": 1, "title": "json-server", "author": "https://github.com/dastorga/listado-personas/blob/master/src/images/beach-84533_1920.jpg", "image": "https://github.com/dastorga/listado-personas/blob/master/src/images/beach-84533_1920.jpg"}
   ],
   "comments": [
     { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "images": [
+    { "id": 1, "description": "some", "url": "https://github.com/dastorga/listado-personas/blob/master/src/images/beach-84533_1920.jpg", "image": "https://github.com/dastorga/listado-personas/blob/master/src/images/beach-84533_1920.jpg" }
   ],
   "profile": { "name": "typicode" }
 }
