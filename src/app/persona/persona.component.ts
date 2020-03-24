@@ -10,10 +10,7 @@ export class PersonaComponent implements OnInit {
   @Input() persona: Persona;
   @Input() indice: number;
 
-
-
   constructor() {
-
   }
 
   ngOnInit() {

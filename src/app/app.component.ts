@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Persona } from './persona.model';
+
 import { JsonService } from './json.service';
 
 @Component({
@@ -8,8 +9,8 @@ import { JsonService } from './json.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  titulo = 'Catalogo de Productos';
-  personas: Persona[] = [new Persona("Juan", "Perez"), new Persona("Jose", "Gonzalez")];
+  titulo = 'Componente Principal';
+  personas: Persona[] = [];
   productos: any[] = [];
 
   constructor(
@@ -22,20 +23,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.jsonService.getJsonServer()
-    .subscribe(
-      (data) => { // Success
-        console.log(data)
-      },
-      (error) => {
-        console.error(error);
-      }
-    );
   }
-
-
-
-
 }
 
 

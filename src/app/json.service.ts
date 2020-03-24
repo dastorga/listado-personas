@@ -7,8 +7,8 @@ export class JsonService {
   // usually you could get this from an environment file
   apiUrl = 'https://randomuser.me/api/';
 
-  apiUrlJsonServer = 'my-json-server.typicode.com/dastorga/listado-personas/'
-  apiUrlJsonServerLocal = 'http://localhost:3000/posts'
+  apiUrlJsonServer = 'my-json-server.typicode.com/dastorga/listado-personas/';
+  apiUrlJsonServerLocal = 'http://localhost:3000/posts';
 
   // inject the HttpClient as http so we can use it in this class
   constructor(private http: HttpClient) {}

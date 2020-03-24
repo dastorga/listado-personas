@@ -1,8 +1,13 @@
-<div class="container">
-  <div class="col-xs-12">
-    <h3>{{titulo}}</h3>
-  </div>
+<!-- Image and text -->
+<nav class="navbar navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">
+    <img src="/docs/4.4/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    Catalogo Online
+  </a>
+</nav>
 
+
+<div class="container">
   <hr/>
 
   <app-formulario
@@ -17,16 +22,12 @@
   [indice]="i"
   ></app-persona>
 
- <div *ngFor='let producto of productos'>
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" [src]="producto.picture.medium" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Producto</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Ver producto</a>
-      </div>
+  <div class="row">
+    <div class="col-sm"></div>
+    <div class="col-sm">
+      <app-producto> </app-producto>
     </div>
-    <hr/>
- </div>
+    <div class="col-sm"></div>
+  </div>
 
 </div>
