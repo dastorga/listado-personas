@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Persona } from './persona.model';
-
 import { JsonService } from './json.service';
 
 @Component({
@@ -23,7 +22,17 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.jsonService.getJsonServer()
+    .subscribe(
+      (data) => { // Success
+        console.log(data);
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
   }
+
 }
 
 
