@@ -20,7 +20,7 @@ export class ProductoComponent implements OnInit {
     .subscribe(
       (data) => { // Success
         this.productos = data['results'];
-        console.log(this.productos)
+        //console.log(this.productos)
       },
       (error) => {
         console.error(error);

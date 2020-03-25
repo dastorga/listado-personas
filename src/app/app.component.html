@@ -1,7 +1,7 @@
 <!-- Image and text -->
 <nav class="navbar navbar-dark bg-primary">
   <a class="navbar-brand" href="#">
-    <img src="/docs/4.4/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    <img src="#" width="30" height="30" class="d-inline-block align-top" alt="">
     Catalogo Online
   </a>
 </nav>
@@ -22,10 +22,26 @@
   [indice]="i"
   ></app-persona>
 
+  <ul>
+    <li class="text" *ngFor="let item of items | async">
+      {{item.image}}
+    </li>
+  </ul>
+
   <div class="row">
     <div class="col-sm"></div>
     <div class="col-sm">
-      <app-producto> </app-producto>
+       <div *ngFor='let item of items | async'>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" [src]="item.image" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Producto</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Ver producto</a>
+              </div>
+            </div>
+            <hr/>
+        </div>
     </div>
     <div class="col-sm"></div>
   </div>
