@@ -9,19 +9,6 @@
 
 <div class="container">
   <hr/>
-
-  <app-formulario
-  (personaCreada)="onPersonaAgregada($event)"
-  ></app-formulario>
-
-  <hr/>
-
-  <app-persona
-  *ngFor="let personaElemento of personas; let i = index"
-  [persona]="personaElemento"
-  [indice]="i"
-  ></app-persona>
-
   <div class="row">
     <div class="col-sm"></div>
     <div class="col-sm">
